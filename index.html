@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letras Dinámicas</title>
+    <style>
+        article {
+            height: 6%;
+            width: 6%;
+            margin: 10px; 
+
+        }
+
+        body,
+        html,
+        p,
+        section {
+            margin: 0;
+            padding: 0;
+        }
+
+        p {
+            width: 10px;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: start; */
+        }
+    </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+    <link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Anton&family=Rowdies:wght@300;400;700&family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Anton&family=Rowdies:wght@300;400;700&family=Sevillana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Alfa+Slab+One&family=Anton&family=Rowdies:wght@300;400;700&family=Sevillana&family=Spicy+Rice&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <section>
+        {% for n in range(33) %}
+        <article>
+            <p style="font-family: {{fonts[0]}}; font-size: {{font_size[0]}}px; color: brown;">{{minus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[0]}}; font-size: {{font_size[0]}}px;  color: {{colors[0]}};">{{mayus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[1]}}; font-size: {{ font_size[1] }}px; color: {{colors[1]}};">{{minus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[5]}}; font-size: {{ font_size[1] }}px;  color: {{colors[2]}};">{{mayus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[2]}}; font-size: {{ font_size[2] }}px; color: {{colors[3]}};">{{minus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[6]}}; font-size: {{ font_size[2] }}px;  color: {{colors[4]}};">{{mayus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[3]}}; font-size: {{ font_size[3] }}px; color: {{colors[5]}};">{{minus_letter}}</p>
+        </article>
+        <article>
+            <p style="font-family: {{fonts[3]}}; font-size: {{ font_size[3] }}px;  color: {{colors[6]}};">{{mayus_letter}}</p>
+        </article>
+        {% endfor %}
+    </section>
+
+   
+</body>
+
+</html>
